@@ -1,4 +1,8 @@
 package com.selva.employeestest.data.network
 
-class ApiNetwork {
+import retrofit2.http.GET
+
+interface ApiService {
+    @get:GET("testTask.json")
+    val employees: Observable<EmployeeResponse?>?
 }

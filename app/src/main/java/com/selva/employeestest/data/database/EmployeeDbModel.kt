@@ -5,13 +5,11 @@ import androidx.room.PrimaryKey
 import java.net.URL
 import java.util.Date
 
-@Entity(tableName = "employees")
+@Entity(tableName = "employee")
 data class EmployeeDbModel(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int,
     val name: String?,
     val lastName: String?,
-    val birthday: Date,
-    val avatarUrl: URL,
-    val specialty: SpecialityDbModel
+    val birthday: String?,
+    val avatarUrl: String?,
+    val speciality: List<SpecialityDbModel>?
 )

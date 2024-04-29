@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "specialities")
 data class SpecialityDbModel (
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     val id: Int?,
     val name: String?
 )
