@@ -21,23 +21,7 @@ class EmployeeDto {
     @Expose
     var avatrUrl: String? = null
 
-    @SerializedName("specialty")
-    @Expose
-    var specialty: List<SpecialityDto>? = null
-
-    fun getfName(): String? {
-        return fName
-    }
-
-    fun setfName(fName: String?) {
-        this.fName = fName
-    }
-
-    fun getlName(): String? {
-        return lName
-    }
-
-    fun setlName(lName: String?) {
-        this.lName = lName
-    }
+//    @SerializedName("specialty")
+//    @Expose
+//    var specialty: List<SpecialityDto>? = null
 }
